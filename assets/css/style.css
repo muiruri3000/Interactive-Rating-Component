@@ -1,0 +1,138 @@
+:root {
+  --Orange: hsl(25, 97%, 53%);
+  --White:hsl(0, 0%, 100%);
+  --Light-Grey: hsl(217, 12%, 63%);
+  --Dark-Blue: hsl(213, 19%, 18%);
+  --Very-Dark-Blue: hsl(216, 12%, 8%);
+}
+
+*, *::before, *::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+img, video, svg {
+  max-width: 100%;
+  display: block;
+  border: none;
+  object-fit: cover;
+}
+
+html {
+  font-size: 15px;
+}
+
+@font-face {
+  font-family: "Overpass", sans-serif;
+  src: url("../fonts/Overpass-Regular.woff2");
+}
+body {
+  background-color: var(--Very-Dark-Blue);
+}
+
+.bottomSpacing {
+  margin-bottom: 0.9em;
+}
+
+.ratehider {
+  display: none;
+}
+
+main {
+  width: 80%;
+  max-width: 350px;
+  margin: 6em auto;
+  padding: 1em 1.6em;
+  border-radius: 1em;
+  background-color: #232A34;
+}
+main header .starImg {
+  display: inline-block;
+  padding: 0.6em;
+  border-radius: 50%;
+  background-color: #262E38;
+}
+main header .starImg.bottomSpacing img {
+  width: 0.7em;
+}
+main header .heading {
+  font-size: 0.7rem;
+  color: var(--White);
+  font-family: "Overpass";
+}
+main section p {
+  color: #969FAD;
+  font-family: "Overpass";
+  font-size: 0.9rem;
+  line-height: 1.5;
+}
+main section .rating {
+  display: flex;
+  justify-content: space-between;
+}
+main section .rating .rate {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  text-align: center;
+  color: #969FAD;
+  background-color: #262E38;
+}
+main footer button {
+  width: 100%;
+  padding: 1em 1.5em;
+  font-size: 0.9rem;
+  border-radius: 2em;
+  border: none;
+  background-color: var(--Orange);
+  font-weight: 700;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  margin-top: 0.5em;
+  color: #131518;
+}
+main .card {
+  max-width: 100%;
+  background-color: var(--Very-Dark-Blue);
+  margin: 1em 0.5em 3em 0.5em;
+  box-shadow: 0.1em 0.2em 0.5em 0.1em black;
+  padding: 1em 2em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+main .card .thankYouImg img {
+  width: 100%;
+  max-width: 8em;
+}
+main .card .selectedRate {
+  width: 80%;
+}
+main .card .selectedRate p {
+  padding: 0.4em 0;
+  border-radius: 1em;
+  font-size: 0.8rem;
+  background-color: var(--Dark-Blue);
+  text-align: center;
+  color: var(--Orange);
+}
+main .card h2 {
+  color: var(--White);
+}
+main .card p {
+  color: var(--Light-Grey);
+  font-size: 0.9rem;
+  line-height: 1.5;
+  text-align: center;
+}
+
+.spacer {
+  margin-top: 0.7em;
+  margin-bottom: 0.7em;
+}
+
+/*# sourceMappingURL=style.css.map */

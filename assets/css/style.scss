@@ -1,0 +1,174 @@
+:root{
+
+
+--Orange: hsl(25, 97%, 53%);
+
+// ### Neutral
+
+--White:hsl(0, 0%, 100%);
+--Light-Grey: hsl(217, 12%, 63%);
+--Dark-Blue: hsl(213, 19%, 18%);
+--Very-Dark-Blue: hsl(216, 12%, 8%); 
+
+}
+*,*::before, *::after{
+    padding:0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+img, video, svg{
+    max-width: 100%;
+    display: block;
+    border: none;
+    object-fit: cover;
+}
+
+html{
+    font-size: 15px;
+}
+
+@font-face {
+    font-family: 'Overpass', sans-serif;
+    src: url('../fonts/Overpass-Regular.woff2');
+    
+}
+
+body{
+
+    background-color: var(--Very-Dark-Blue);
+}
+
+.bottomSpacing{
+    margin-bottom: .9em;
+}
+.ratehider{
+    display: none;   
+   }
+
+main{
+
+    width: 80%;
+    max-width: 350px;
+    margin: 6em auto;
+    padding: 1em 1.6em;
+    border-radius: 1em;
+    background-color: #232A34;
+
+  
+    header{
+        .starImg{
+            
+            display: inline-block;
+            padding: .6em;
+            border-radius: 50%;
+            background-color: #262E38;
+           
+            
+        }
+        .starImg.bottomSpacing img{
+            width: .7em;
+        }
+
+        .heading{
+            font-size: .7rem;
+            color: var(--White);
+            font-family: 'Overpass';
+            
+        }
+    }
+
+    section{
+        p{
+            color: #969FAD;
+            
+            font-family: 'Overpass';
+            
+            font-size: .9rem;
+            line-height: 1.5;
+        }
+
+        .rating{
+            display: flex;
+           justify-content: space-between;
+        
+            .rate{
+                
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                width: 45px;
+                height: 45px;
+                border-radius: 50%;                
+               text-align: center;
+                color: #969FAD;
+                background-color: #262E38;
+            }
+        }
+    }
+
+    footer{
+        button{
+            width: 100%;
+            padding: 1em 1.5em;
+            font-size: .9rem;
+            border-radius: 2em;
+            border: none;
+            background-color: var(--Orange);
+            font-weight: 700;
+            letter-spacing: .2em;
+            text-transform: uppercase;
+            margin-top: .5em;
+            color: #131518;
+        }
+    }
+
+    .card{
+
+        max-width: 100%;
+        background-color: var(--Very-Dark-Blue);
+        margin: 1em .5em 3em .5em;
+        box-shadow: .1em .2em .5em .1em black;
+        padding: 1em 2em;
+    
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        .thankYouImg img{
+            width: 100%;
+            max-width: 8em;
+        }
+        .selectedRate {
+            
+            width: 80%;       
+            p{
+                padding: .4em 0;
+        
+            
+            border-radius: 1em;
+            font-size: .8rem;
+            background-color: var(--Dark-Blue);
+            text-align: center;
+            color: var(--Orange);
+        }
+    }
+
+    h2{
+        color:var(--White);
+    }
+
+    p{
+        color: var(--Light-Grey);
+        font-size: .9rem;
+        line-height: 1.5;
+        text-align: center;
+    }
+    
+    }
+    // background-color: var(--Very-Dark-Blue);
+}
+.spacer{
+    margin-top: .7em;
+    margin-bottom: .7em;
+}
