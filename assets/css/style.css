@@ -82,6 +82,11 @@ main section .rating .rate {
   color: #969FAD;
   background-color: #262E38;
 }
+main section .rating .rate:hover {
+  background-color: var(--Light-Grey);
+  cursor: pointer;
+  color: black;
+}
 main footer button {
   width: 100%;
   padding: 1em 1.5em;
@@ -94,6 +99,11 @@ main footer button {
   text-transform: uppercase;
   margin-top: 0.5em;
   color: #131518;
+}
+main footer button:hover {
+  cursor: pointer;
+  background-color: white;
+  border: 1px solid var(--Orange);
 }
 main .card {
   max-width: 100%;

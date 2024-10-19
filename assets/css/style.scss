@@ -104,6 +104,11 @@ main{
                 color: #969FAD;
                 background-color: #262E38;
             }
+            .rate:hover{
+                background-color: var(--Light-Grey);
+                cursor: pointer;
+                color: black;
+            }
         }
     }
 
@@ -120,6 +125,12 @@ main{
             text-transform: uppercase;
             margin-top: .5em;
             color: #131518;
+        }
+
+        button:hover{
+            cursor: pointer;
+            background-color: white;
+            border: 1px solid var(--Orange);
         }
     }
 
