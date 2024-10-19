@@ -42,16 +42,25 @@ let results = '';
             alert('must give a rating'); 
         }else{
 
-        
+        hide(); 
+        display();
 
-        
-        rateResult.innerHTML = results;
-        header.classList.add('ratehider');
-        section.classList.add('ratehider');
-        footer.classList.add('ratehider');
-        cardContainer.classList.remove('ratehider');
         }
     
     });
 
+
+
+function hide(){
+    
+        
+    rateResult.innerHTML = results;
+    header.classList.add('ratehider');
+    section.classList.add('ratehider');
+    footer.classList.add('ratehider');
+}
+function display(){
+
+    cardContainer.classList.remove('ratehider');
+}
 });

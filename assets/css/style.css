@@ -6,6 +6,17 @@
   --Very-Dark-Blue: hsl(216, 12%, 8%);
 }
 
+.attribution {
+  color: white;
+  margin-top: 3em;
+  font-size: 11px;
+  text-align: center;
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
 *, *::before, *::after {
   padding: 0;
   margin: 0;
@@ -46,6 +57,7 @@ main {
   padding: 1em 1.6em;
   border-radius: 1em;
   background-color: #232A34;
+  background-color: #131518;
 }
 main header .starImg {
   display: inline-block;
